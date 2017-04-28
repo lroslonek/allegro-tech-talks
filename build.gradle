@@ -1,0 +1,19 @@
+group 'pl.qualitymeetup'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'ch.qos.logback', name: 'logback-classic', version: '0.9.26'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'org.yaml', name: 'snakeyaml', version: '1.16'
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-server', version: '2.50.1'
+    testCompile group: 'org.spockframework', name: 'spock-core', version: '1.0-groovy-2.4'
+}
